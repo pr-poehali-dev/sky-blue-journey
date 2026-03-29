@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge"
+import ChessBoard from "./ChessBoard"
 
 export const sections = [
   {
@@ -6,7 +7,8 @@ export const sections = [
     subtitle: <Badge variant="outline" className="text-cyan-400 border-cyan-400/50">⚡ Простая механика</Badge>,
     title: "Ты и Робот.",
     showButton: true,
-    buttonText: 'Начать'
+    buttonText: 'Начать',
+    customContent: <ChessBoard />
   },
   {
     id: 'about',
